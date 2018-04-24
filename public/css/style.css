@@ -1,4 +1,4 @@
-a {
+a.menuitem{
 	background: #DCDCDC;
 	border-radius: 5px;
 	cursor: pointer;
@@ -7,15 +7,22 @@ a {
 	font-weight: 100;
 	padding: 10px 20px;
 	font-size: 20px;
+  width:100px;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  transition: all 0.5s;
 }
 
-.a:hover {
+a.menuitem:hover {
 	background: black;
 }
 
-div {
+.section {
 	height: 100vh;
-	padding-top: 20px;
+	padding-top: 69px;
 	font-size: 20px;
 }
 
@@ -43,21 +50,42 @@ div {
 	position: fixed;
 	bottom: 0;
 	right: 0;
+  background: #DCDCDC;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-family: "Helvetica";
+  font-weight: 100;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+#top:hover{
+  background: black;
 }
 
 .button {
-  display: inline-block;
+  background: #DCDCDC;
   border-radius: 5px;
-  background-color: #DCDCDC;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  color: white;
+  font-family: "Helvetica";
+  font-weight: 100;
+  padding: 10px 20px;
+  font-size: 20px;
+  width:100px;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.5s;
+}
+
+.button:hover{
+  width:120px;
+  background: black;
 }
 
 .button span {
@@ -83,4 +111,16 @@ div {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+#menucontainer{
+  position: fixed;
+  height:60px;
+  width:100vw;
+  background-color:white;
+  top:0;
+  padding-top:9px;
+}
+body{
+  padding-top:69px;
 }

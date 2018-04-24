@@ -11,22 +11,21 @@
 </style>
 </head>
 <body>
-	<a onclick="initScroll('first'); return false;" href="#">Første</a>
-	<a onclick="initScroll('second'); return false;" href="#">Anden</a>
-	<a onclick="initScroll('third'); return false;" href="#">Tredje</a>
-	<a onclick="initScroll('fourth'); return false;" href="#">Fjerde</a>
-	<a onclick="initScroll('fifth'); return false;" href="#">Femte</a>
-	<a id="top" onclick="toTop(); return false;" href="#">Til toppen</a>
-
-	<button class="button" style="vertical-align:middle"><span>Kontakt</span></button>
-
-	<div id="first"> Første paragraf </div>
-	<div id="second"> Anden paragraf </div>
-	<div id="third"> Tredje paragraf </div>
-	<div id="fourth"> Fjerde paragraf </div>
-	<div id="fifth"> Femte paragraf </div>
-
-
-
+	<div id="menucontainer">
+		<a class="menuitem" onclick="initScroll('first'); return false;" href="#">Første</a>
+		<a class="menuitem" onclick="initScroll('second'); return false;" href="#">Anden</a>
+		<a class="menuitem" onclick="initScroll('third'); return false;" href="#">Tredje</a>
+		<a class="menuitem" onclick="initScroll('fourth'); return false;" href="#">Fjerde</a>
+		<a class="menuitem" onclick="initScroll('fifth'); return false;" href="#">Femte</a>
+		<a id="top" onclick="toTop(); return false;" href="#">Til toppen</a>
+		<a class="button"><span>Kontakt</span></a>
+	</div>
+	<main>
+		<div class="section" id="first"> Første paragraf </div>
+		<div class="section" id="second"> Anden paragraf </div>
+		<div class="section" id="third"> Tredje paragraf </div>
+		<div class="section" id="fourth"> Fjerde paragraf </div>
+		<div class="section" id="fifth"> Femte paragraf </div>
+	</main>
 </body>
 </html>
