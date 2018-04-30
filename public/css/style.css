@@ -1,13 +1,14 @@
-a.menuitem{
-	background: #DCDCDC;
-	border-radius: 5px;
-	cursor: pointer;
-	color: white;
-	font-family: "Helvetica";
-	font-weight: 100;
-	padding: 10px 20px;
-	font-size: 20px;
-  width:100px;
+@media (min-width: 890px){
+  a.menuitem{
+  background: #d2dae2;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #485460;
+  font-family: "Helvetica";
+  font-weight: 100;
+  padding: 10px 20px;
+  font-size: 20px;
+  width:65px;
   display: inline-block;
   height: 30px;
   text-align: center;
@@ -16,14 +17,58 @@ a.menuitem{
   transition: all 0.5s;
 }
 
-a.menuitem:hover {
-	background: black;
+  a.menuitem:hover {
+    background: #485460;
+    color: #d2dae2;
+  }
+
+  #desktopmenucontainer{
+    position: absolute;
+    right: 18px;
+    display:inline-block;
+  }
+
+  #mobilemenucontainer{
+    display: none;
+  }
+}
+
+@media (max-width: 890px){
+  #desktopmenucontainer{
+    display:none;
+  }
+
+  #mobilemenucontainer{
+    position: absolute;
+    right:18px;
+    top:5px;
+  }
+
+  #mobiledropdown{
+    width:200px;
+    height:300px;
+    position: fixed;
+    top:-300px;
+    z-index:-10;
+    right:0;
+    background-color: white;
+    transition: 1s;
+  }
+
+  .mobilemenuitem{
+    height:30px;
+    width:200px;
+  }
+
+  #mobiledropdown.active{
+    top:60px;
+  }
 }
 
 .section {
-	height: 100vh;
-	padding-top: 69px;
-	font-size: 20px;
+  height: 100vh;
+  padding: 10px;
+  font-size: 20px;
 }
 
 #first {
@@ -50,10 +95,10 @@ a.menuitem:hover {
 	position: fixed;
 	bottom: 0;
 	right: 0;
-  background: #DCDCDC;
+  background: #d2dae2;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
+  color: #485460;
   font-family: "Helvetica";
   font-weight: 100;
   padding: 10px 20px;
@@ -63,55 +108,42 @@ a.menuitem:hover {
 }
 
 #top:hover{
-  background: black;
+  background: #485460;
+  color: #d2dae2;
+}
+/*
+#kontaktknap:hover{
+  width:85px;
 }
 
-.button {
-  background: #DCDCDC;
-  border-radius: 5px;
+#kontaktknap span {
   cursor: pointer;
-  color: white;
-  font-family: "Helvetica";
-  font-weight: 100;
-  padding: 10px 20px;
-  font-size: 20px;
-  width:100px;
-  display: inline-block;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  transition: all 0.5s;
-}
-
-.button:hover{
-  width:120px;
-  background: black;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
   position: relative;
   transition: 0.5s;
+  color: #485460;
 }
 
-.button span:after {
+#kontaktknap span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
+  color: #485460;;
 }
 
-.button:hover span {
+#kontaktknap:hover span {
   padding-right: 25px;
+  color: #d2dae2;
 }
 
-.button:hover span:after {
+#kontaktknap:hover span:after {
   opacity: 1;
   right: 0;
+  color: #d2dae2;
 }
+*/
 
 #menucontainer{
   position: fixed;
@@ -120,7 +152,15 @@ a.menuitem:hover {
   background-color:white;
   top:0;
   padding-top:9px;
+  z-index:20px;
 }
 body{
   padding-top:69px;
 }
+
+#logoimg{
+  display:inline-block;
+  margin-left:20px;
+}
+
+button:focus {outline:0;}
