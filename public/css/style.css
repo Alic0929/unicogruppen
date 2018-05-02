@@ -92,7 +92,7 @@
 }
 
 #first {
-	background: grey;
+	background: #B0C4DE;
 }
 
 #second {
@@ -100,15 +100,15 @@
 }
 
 #third {
-	background: orange;
+	background: #B0C4DE;
 }
 
 #fourth {
-	background: green;
+	background: white;
 }
 
 #fifth {
-	background: blue;
+	background: #B0C4DE;
 }
 
 #top {
@@ -131,6 +131,11 @@
   background: #485460;
   color: #d2dae2;
 }
+
+  footer{
+  text-align: center;
+  background-color: #485460;
+  }
 /*
 #kontaktknap:hover{
   width:85px;

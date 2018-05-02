@@ -105,3 +105,34 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
   document.querySelector("#mobiledropdown").classList.toggle("active");
 });
+
+//Slideshow koder
+
+    $(document).ready(function(){
+      $(".iAmTest").nerveSlider({
+        sliderWidth: "100%",
+        sliderHeight: "400px",
+        sliderFullscreen: false,
+        sliderAutoPlay: true,
+        waitForLoad: false,
+        slideTransition: "fade", // kan være enten "slide" eller "fade"
+        slideTransitionDirection: "left",
+        slideTransitionSpeed: 1000,
+        slideTransitionDelay: 5000,
+        showCaptions: true,
+        simultaneousCaptions: false,
+        showTimer: true,
+        showPause: false,
+        showArrows: true,
+        showDots: true,
+        showLoadingOverlay: true,
+        sliderTheme: "light",
+        slidesDraggable: true,
+        allowKeyboardEvents: true,
+        });
+    });
+
+
+
+
+
