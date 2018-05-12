@@ -11,7 +11,9 @@
 	<script src="public/js/jquery-1.10.2.min.js"></script>
 	<script src="public/js/jquery-ui-1.10.2.min.js"></script>
 	<script src="public/js/jquery.nerveSlider.min.js"></script>
+	<script src="public/js/jquery.transit.min.js"></script>
 	<link rel="stylesheet" href="public/css/nerveSlider.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Kalam|Roboto	" rel="stylesheet">
 
 </head>
 <body>
@@ -41,20 +43,33 @@
 		</div>
 	</div>
 	<main>
-
+		<div class="section" id="first">
+			<!--
 			<div class="iAmTest">
-			<img src="public/img/billede1.jpg">
-			<img src="public/img/billede2.jpg">
-			<img src="public/img/billede3.jpg">
-			<img src="public/img/billede4.jpg">	
-			<img src="public/img/billede5.jpg">	
-			<img src="public/img/billede6.jpg">			
+				<img class="darkimg" src="public/img/billede1.jpg">
+				<img class="darkimg" src="public/img/billede2.jpg">
+				<img class="darkimg" src="public/img/billede3.jpg">
+				<img class="darkimg" src="public/img/billede4.jpg">	
+				<img class="darkimg" src="public/img/billede5.jpg">	
+				<img class="darkimg" src="public/img/billede6.jpg">			
+			</div>
+			-->
+			<div id="sharp1"></div>
+			<div id="sharp2"></div>
+			<div id="textcontainer">
+				<p id="overskrift">Unico-Gruppen</p>
+				<p id="kortintro">Udlejning og produktion samt salg og installation af lyd, lys, scene og AV</p>
+			</div>
 		</div>
-
-</div>
-
-		<div class="section" id="first"> Første paragraf </div>
-		<div class="section" id="second"> Anden paragraf </div>
+		<div class="section" id="second">
+			<h1 id="wedo" >Vi leverer til
+			  <span
+			     class="txt-rotate"
+			     data-period="2000"
+			     data-rotate='[ "koncerter og shows.", "messer og modeshows.", "møder og foredrag.", "sport og event.", "teater og tv.", "dit event." ]'></span>
+			</h1>
+			<p id="kontaktintro"><a style="cursor:pointer;"><u>Kontakt</u></a> Unico-Gruppen for en gennemgang af dit behov og tekniske løsning!</p>
+		</div>
 		<div class="section" id="third"> Tredje paragraf </div>
 		<div class="section" id="fourth"> Fjerde paragraf </div>
 		<div class="section" id="fifth"> Femte paragraf </div>
@@ -65,3 +80,4 @@
 
 </body>
 </html>
+

@@ -86,17 +86,23 @@
 }
 
 .section {
-  height: 100vh;
   padding: 10px;
   font-size: 20px;
+  z-index: 3;
 }
 
 #first {
-	background: #B0C4DE;
+  padding: 0px;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/billede7.jpg');
+  overflow:hidden;
+  position: relative;
 }
 
 #second {
 	background: white;
+  height:250px;
+  text-align: center;
 }
 
 #third {
@@ -177,10 +183,11 @@
   background-color:white;
   top:0;
   padding-top:9px;
-  z-index:20px;
+  z-index:999;
 }
 body{
   padding-top:69px;
+  overflow-x:hidden;
 }
 
 #logoimg{
@@ -189,3 +196,68 @@ body{
 }
 
 button:focus {outline:0;}
+
+main{
+  z-index: 2;
+}
+
+.darkimg{
+  filter: brightness(7  0%);
+}
+
+#sharp1{
+  width:100vw;
+  height:150px;
+  bottom:-60px;
+  background-color: white;
+  transform:rotateZ(15deg);
+  left:-30%;
+  position: absolute;
+  z-index:1;
+}
+
+#sharp2{
+  width:100vw;
+  height:150px;
+  bottom:-60px;
+  background-color: white;
+  transform:rotateZ(-15deg);
+  position: absolute;
+  right:-30%;
+  z-index:1;
+}
+
+#overskrift{
+  font-family: 'Kalam', cursive;
+  color:rgba(255,255,255,0.8);
+  font-size: 3em;
+  opacity:0;
+  margin:0;
+}
+
+#kortintro{
+  font-family: 'Roboto', sans-serif;
+  color:rgba(255,255,255,0.8);
+  font-size:1.4em;
+  opacity: 0;
+}
+
+#textcontainer{
+  position: absolute;
+  top:120px;
+}
+
+.txt-rotate > .wrap { border-right: 0.08em solid #666 }
+
+#wedo{
+  font-family: 'Roboto', sans-serif;
+  color:rgba(0,0,0,0.8);
+  font-size:1.8em;
+  height:60px;
+}
+
+#kontaktintro{
+  font-family: 'Roboto', sans-serif;
+  color:rgba(0,0,0,0.8);
+  font-size:1.5em;
+}
