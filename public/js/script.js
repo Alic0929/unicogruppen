@@ -145,6 +145,8 @@ hamburger.addEventListener("click", function() {
           new TxtRotate(elements[i], JSON.parse(toRotate), period);
         }
       }
+      $('.sectionheader').after('<span class="sexy_line"></span>')
+      $('.sectionsubheader').after('<span class="short_sexy_line"></span>')
     });
 
 

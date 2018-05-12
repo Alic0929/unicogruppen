@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>
-		UnicoGruppen
+		Unico-Gruppen
 	</title>
-	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<link rel="stylesheet" href="public/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="public/css/hamburgers.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="public/js/jquery-1.10.2.min.js"></script>
@@ -13,7 +13,8 @@
 	<script src="public/js/jquery.nerveSlider.min.js"></script>
 	<script src="public/js/jquery.transit.min.js"></script>
 	<link rel="stylesheet" href="public/css/nerveSlider.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Kalam|Roboto	" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 
 </head>
 <body>
@@ -21,7 +22,7 @@
 		<a><img id="logoimg" width="200px" height="70px" src="./public/img/uglogo.png"></a>
 		<div id="desktopmenucontainer">
 			<a class="menuitem" href="javascript:scrollTo('second');" >Produkter</a>
-			<a class="menuitem" href="javascript:scrollTo('third');" >Salg</a>
+			<a class="menuitem" href="javascript:scrollTo('fourth');" >Salg</a>
 			<a class="menuitem" href="javascript:scrollTo('fourth');" >Udlejning</a>
 			<a class="menuitem" href="javascript:scrollTo('fifth');">Installation</a>
 			<a class="menuitem" id="kontaktknap"> Kontakt <!-- <span></span>--></a>
@@ -35,7 +36,7 @@
 			</button>
 			<div id="mobiledropdown">
 				<a class="mobilemenuitem" href="javascript:scrollTo('second');" >Produkter</a>
-				<a class="mobilemenuitem" href="javascript:scrollTo('third');" >Salg</a>
+				<a class="mobilemenuitem" href="javascript:scrollTo('fourth');" >Salg</a>
 				<a class="mobilemenuitem" href="javascript:scrollTo('fourth');" >Udlejning</a>
 				<a class="mobilemenuitem" href="javascript:scrollTo('fifth');">Installation</a>
 				<a class="mobilemenuitem"> Kontakt</a>
@@ -43,7 +44,7 @@
 		</div>
 	</div>
 	<main>
-		<div class="section" id="first">
+		<div class="section container-fluid" id="first">
 			<!--
 			<div class="iAmTest">
 				<img class="darkimg" src="public/img/billede1.jpg">
@@ -61,7 +62,7 @@
 				<p id="kortintro">Udlejning og produktion samt salg og installation af lyd, lys, scene og AV</p>
 			</div>
 		</div>
-		<div class="section" id="second">
+		<div class="section container-fluid" id="second">
 			<h1 id="wedo" >Vi leverer til
 			  <span
 			     class="txt-rotate"
@@ -70,13 +71,92 @@
 			</h1>
 			<p id="kontaktintro"><a style="cursor:pointer;"><u>Kontakt</u></a> Unico-Gruppen for en gennemgang af dit behov og tekniske løsning!</p>
 		</div>
-		<div class="section" id="third"> Tredje paragraf </div>
-		<div class="section" id="fourth"> Fjerde paragraf </div>
-		<div class="section" id="fifth"> Femte paragraf </div>
+		<div class="section container-fluid" id="third">Tredje paragraf</div>
+		<div class="section container-fluid" id="fourth">
+			<p class="sectionheader">SALG</p>
+			<br />
+			<div class="row">
+				<div class="col-xl-6 col-md-6 col-sm-12" style="margin-bottom:10px;">
+					<div style="height:100%;">
+						Salgsafdelingen leverer dagligt til:
+						<ul>
+							<li>
+								Private og profesionelle musikere
+							</li>
+							<li>
+								Skoler og institutioner
+							</li>
+							<li>
+								Idrætsanlæg og virksomheder
+							</li>
+							<li>
+								Diskoteker og butikker m.fl. 
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-6 col-md-6 col-sm-12">
+					<div class="row">
+						<div class="col-xl-12">
+							Vi ved, at hurtig levering til den rigtige pris er altafgørende. Derfor har vi et stort lager af:
+							<ul>
+								<li>
+									Mikrofoner, højttalere og mixere
+								</li>
+								<li>
+									Lamper og pærer, LED belysning og movingheads
+								</li>
+								<li>
+									Kabler og stik m.m.
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-12">
+							Desuden er vi også leveringsdygtige i:
+							<ul>
+								<li>
+									Projektorer og lærreder
+								</li>
+								<li>
+									Fladskærme og LED storskærme
+								</li>
+								<li>
+									Scenepodier
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-8" style="text-align: center">
+					<p class="sectionsubheader">Mærker og priser</p>
+				</div>
+			</div>
+			<p>Vi forhandler alle anderkendte mærker indenfor den tekniske branche. Herunder ses et uddrag af de mærker, som vi forhandler. Vi matcher næsten alle priser fra danske og udenlandske hjemmesider på professionelle produkter, og vi levere ovenikøbet en bedre vejledning og service.</p>
+			<div id="logocontainer">
+				<a href="http://www.akg.com/" target="_blank"><img src="public/img/brandlogo/akg.png" class="logoimg"></a>
+				<a href="http://www.bss.co.uk/" target="_blank"><img src="public/img/brandlogo/bss.png" class="logoimg"></a>
+				<a href="http://www.crownaudio.com/" target="_blank"><img src="public/img/brandlogo/crown.png" class="logoimg"></a>
+				<a href="http://www.dbxpro.com/" target="_blank"><img src="public/img/brandlogo/dbx.png" class="logoimg"></a>
+				<a href="http://www.jblpro.com/" target="_blank"><img src="public/img/brandlogo/jbl.png" class="logoimg"></a>
+				<a href="http://www.k-m.de/" target="_blank"><img src="public/img/brandlogo/k_m.png" class="logoimg"></a>
+				<a href="http://www.lexiconpro.com/" target="_blank"><img src="public/img/brandlogo/lexicon.png" class="logoimg"></a>
+				<a href="http://www.mipro.com.tw/" target="_blank"><img src="public/img/brandlogo/mipro.png" class="logoimg"></a>
+				<a href="http://www.neutrik.com/" target="_blank"><img src="public/img/brandlogo/neutrik.png" class="logoimg"></a>
+				<a href="http://nivtec-flexibel.de/" target="_blank"><img src="public/img/brandlogo/nivtec.png" class="logoimg"></a>
+				<a href="http://www.powersoft.it/" target="_blank"><img src="public/img/brandlogo/powersoft.png" class="logoimg"></a>
+				<a href="http://www.rcf.it/" target="_blank"><img src="public/img/brandlogo/rcf.png" class="logoimg"></a>
+				<a href="http://www.rodemic.com/" target="_blank"><img src="public/img/brandlogo/rode.png" class="logoimg"></a>
+				<a href="http://www.soundcraft.com/" target="_blank"><img src="public/img/brandlogo/soundcraft.png" class="logoimg"></a>
+				<a href="http://www.studiomaster.com/" target="_blank"><img src="public/img/brandlogo/studiomaster.png" class="logoimg"></a>
+			</div>
+		</div>
+		<div class="section container-fluid" id="fifth">Femte paragraf</div>
 	</main>
 	<script type="text/javascript" src="public/js/script.js"></script>
 
-	<footer><font color="white">Unico Gruppen | Søndergade 107 | Vejen 6600 | Tlf. +45 75365779 | post@unico-gruppen.dk</font></footer>
+	<footer><font color="white">Unico-Gruppen | Søndergade 107 | Vejen 6600 | Tlf. +45 75365779 | post@unico-gruppen.dk</font></footer>
 
 </body>
 </html>
