@@ -158,8 +158,8 @@
 
 #top {
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	bottom: 5px;
+	right: 5px;
   background: #d2dae2;
   border-radius: 5px;
   cursor: pointer;
@@ -217,7 +217,7 @@
 
 #menucontainer{
   position: fixed;
-  height:60px;
+  height:77px;
   width:100vw;
   background-color:white;
   top:0;
@@ -246,8 +246,8 @@ main{
 
 #sharp1{
   width:100vw;
-  height:150px;
-  bottom:-60px;
+  height:30vh;
+  bottom:-15vh;
   background-color: white;
   transform:rotateZ(15deg);
   left:-30%;
@@ -257,8 +257,8 @@ main{
 
 #sharp2{
   width:100vw;
-  height:150px;
-  bottom:-60px;
+  height:30vh;
+  bottom:-15vh;
   background-color: white;
   transform:rotateZ(-15deg);
   position: absolute;
@@ -331,4 +331,8 @@ main{
   width: 75px;
   float:left;
   margin:10px;
+}
+
+#downloadpdfbutton{
+  font-size: 1.2em;
 }
